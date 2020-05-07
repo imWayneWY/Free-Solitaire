@@ -1,0 +1,20 @@
+.root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 100vh;
+}
+
+.btn {
+  background: aquamarine;
+  color: orange;
+  width: 320px;
+  height: 160px;
+  border-radius: 40px;
+  margin-top: 60px;
+  font-size: xx-large;
+  text-decoration: none;
+  line-height: 160px;
+}

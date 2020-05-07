@@ -111,7 +111,7 @@ const Game = () => {
         if(toCol.length>0) {
           toCard = toCol[toCol.length-1];
         }
-        if (tmpCard && (toCard.value - tmpCard.value !== 1 || toCard.color === tmpCard.color)) {
+        if (toCard && (toCard.value - tmpCard.value !== 1 || toCard.color === tmpCard.color)) {
           return;
         }
         toCol.push(tmpCard);

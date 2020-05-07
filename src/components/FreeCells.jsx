@@ -23,7 +23,7 @@ export default ({cards, onDrop, onDragStart}) => {
         cards.map((card,index) => 
           <div key={index} onDrop={() => handleDrop(index)} onDragOver={canDrop} onDragEnter={canDrop} className={styles.freeCell}>
             {
-              card && <div className={styles.card}><Card card={card} handleDrag={handleDrag} draggable="true"/></div>
+              card && <div className={styles.card}><Card card={card} handleDrag={handleDrag} draggable="true" handleClick={() => false}/></div>
             }
           </div>
         )
