@@ -1,0 +1,19 @@
+.root {
+  width: 100%;
+  height: 100vh;
+}
+
+.top {
+  width: 100%;
+  height: 30%;
+  display: flex;
+}
+
+.foundations, .freeCells{
+  width: 50%;
+  height: 100%;
+}
+.cascadeColumns {
+  width: 100%;
+  height: 40%;
+}

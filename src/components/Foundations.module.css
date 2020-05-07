@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+.foundation {
+  background: #fff;
+  width: 80px;
+  height: 120px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #555;
+  border-width: 2px;
+  line-height: 120px;
+  position: relative;
+}
+.card{
+  position: absolute;
+  left: -2px;
+  top: -2px;
+}

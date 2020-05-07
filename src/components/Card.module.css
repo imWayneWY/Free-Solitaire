@@ -1,0 +1,13 @@
+.root {
+  width: 80px;
+  height: 120px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 4px;
+  border-style: solid;
+  border-color: #555;
+}
+
+.root span {
+  margin-right: 8px;
+}

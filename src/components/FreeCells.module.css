@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+.freeCell {
+  background: #ccc;
+  width: 80px;
+  height: 120px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #555;
+  border-width: 2px;
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  top:-2px;
+  left:-2px;
+}
