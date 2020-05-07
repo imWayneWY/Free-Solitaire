@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 import styles from './Columns.module.css';
 
-export default ({col, colIndex, onDragStart, onDrop, handleClickCard}) => {
+export default ({col, colIndex, onDragStart, onDrop, handleClickCard,onErrorHold}) => {
   const handleDrag = (id) => {
     if(id === col[col.length-1].id){
       onDragStart(colIndex, col.length-1);
@@ -23,7 +23,7 @@ export default ({col, colIndex, onDragStart, onDrop, handleClickCard}) => {
       if(flg){
         onDragStart(colIndex, index);
       } else {
-        console.log('false')
+        onErrorHold();
         return;
       }
     }
@@ -46,7 +46,7 @@ export default ({col, colIndex, onDragStart, onDrop, handleClickCard}) => {
     <div className={styles.root} onDrop={handleDrop} onDragOver={canDrop} onDragEnter={canDrop} >
       {
         col.map((card,index) => 
-          <div key={index} className={styles.card} style={{top: `${index*30}px`}}>
+          <div key={index} className={styles.card} style={{top: `${(index+1)*30}px`}}>
             <Card card={card} handleDrag={handleDrag} draggable="true" handleClick={handleClick}/>
           </div>)
       }

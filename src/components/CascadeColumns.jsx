@@ -3,7 +3,7 @@ import Columns from './Columns';
 import styles from './CascadeColumns.module.css';
 import {withRouter} from 'react-router-dom'
 
-const CascadeColumns = ({cards, onDragStart, onDrop, handleClickCard,history}) => {
+const CascadeColumns = ({cards, onDragStart, onDrop, handleClickCard,history,onErrorHold}) => {
   useEffect(() => {
     let flg = true; // if all the cards have been sorted
     if (cards.length === 0) {
@@ -29,7 +29,7 @@ const CascadeColumns = ({cards, onDragStart, onDrop, handleClickCard,history}) =
     <div className={styles.root}>
       {
         cards.map((col, index) => 
-          <Columns key={index} col={col} colIndex={index} onDragStart={onDragStart} onDrop={onDrop} handleClickCard={handleClickCard}/>
+          <Columns key={index} col={col} colIndex={index} onDragStart={onDragStart} onDrop={onDrop} handleClickCard={handleClickCard} onErrorHold={onErrorHold}/>
         )
       }
     </div>

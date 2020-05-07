@@ -7,7 +7,7 @@ const End = () => {
     <div className={styles.root}>
       <h1>Congratulations! You did it!</h1>
       <p>Want to try one more time?</p>
-      <Link className={styles.btn} to="/game">Start</Link>
+      <Link className={styles.btn} to="/game">Play again</Link>
     </div>
   )
 }
